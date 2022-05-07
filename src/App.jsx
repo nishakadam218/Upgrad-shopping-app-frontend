@@ -40,16 +40,17 @@ function App() {
           <Route  path="/products" element={<Products />}/>
           <Route  path="/products/:keyword" element={<Products />}/>
           <Route  path="/product/:id" element={<ProductDetails />}/>
-          <Route path="/order"  element={<AddItems />}/>
-          <Route path="/shipping"  element={<AddAddress />}/>
-          <Route path="/confirmorder"  element={<ConfirmOrder />}/>
+        
           <Route  path="/cart" element={<Cart/>}/>
           {/* <Route  path="/order/:id" element={<HorizontalLinearStepper/>}/> */}
           {/* <Route path="/steper" element={<LinearStepper/>}/> */}
           {/* <Route  path="/adminhome/product/:id" element={<ProductDetails />}/> */}
            <Route  path="/" element={<Home />}/>
            {/* admin routes */}
-         <Route element={<ProtectedRoute />}>   
+         <Route element={<ProtectedRoute />}>  
+         <Route path="/order"  element={<AddItems />}/>
+          <Route path="/shipping"  element={<AddAddress />}/>
+          <Route path="/confirmorder"  element={<ConfirmOrder />}/> 
           <Route exact path="/order/:id" element={<AdminProductDetails />}/>
           <Route  path="/admin/products" element={<AdminHome />}/>
           <Route  path="/addproduct" element={<AddProduct />}/>

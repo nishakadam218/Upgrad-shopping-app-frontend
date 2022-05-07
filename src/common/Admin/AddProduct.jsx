@@ -27,10 +27,9 @@ function AddProduct() {
       toast.error(error);
       dispatch(clearErrors());
     }
-
     if (success) {
      toast.success("Product Created Successfully");
-      navigate("/adminhome");
+      navigate("/admin/products");
       dispatch({ type: NEW_PRODUCT_RESET });
     }
   }, [dispatch,  error, navigate, success]);

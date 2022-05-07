@@ -19,8 +19,8 @@ function AddItems() {
    {cartItems &&
       cartItems.map((item) => (
     <>
-    <Grid container spacing={3} sx={{marginTop:"60px"}}>
-      <Grid item xl={3} lg={3} md={3} sm={12} xs={12}>
+    <Grid container spacing={3} sx={{margin:"20px auto"}}>
+      <Grid item xl={3} lg={3} md={12} sm={12} xs={12}>
           <div className="item-details">
             <div className="CartItemCard">
               <img

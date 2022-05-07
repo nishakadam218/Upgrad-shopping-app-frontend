@@ -36,7 +36,7 @@ function AddAddress() {
     navigate("/confirmorder");
     
   };
-  console.log(shippingInfo);
+
   return (
     <>
     <CheckoutSteps activeStep={1}></CheckoutSteps>

@@ -22,6 +22,7 @@ function ProductDetails() {
   const { product, loading } = useSelector((state) => state.productDetails);
  
   const { id } = useParams();
+
   useEffect(() => {
     dispatch(getProductDetails(id));
   }, [dispatch, id]);
